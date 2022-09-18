@@ -1,0 +1,369 @@
+body{
+    background-color: #111;
+}
+.b-amarillo, .mascotas__b-amarillo{
+    color:#dd0
+}
+.b-rojo, .mascotas__b-rojo{
+    color: #c05;
+}
+/*-----------------------------------variables------------------------------*/
+:root{
+    --color-primario:#c05;
+    --color-secundario:#dd0;
+    --color-blanco:#fff;
+    --color-terceario:#1025;
+    --texto-primario:'Rubik Moonrocks', cursive;
+}
+/*------------------------------------header-------------------------------*/
+header{
+    width: 100%;
+    height: 800px;
+    background:  url(imagenes/mconviviendo.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #111;
+    padding-bottom: 5px;
+    z-index: 10;
+}
+.header-nav__div{
+    position: absolute;
+    width: 70px;
+    right: 10px;
+    top: 0px;
+}
+.header-nav__a{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-blanco);
+    padding: 5px 20px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+.header-section__h1{
+    font-family: 'Rubik Moonrocks', cursive;
+    color:var(--color-blanco);
+    font-size: 50px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+
+.header-section__h1-1{
+    color: var(--color-primario);
+    top: 220px;
+    left: 30px;
+}
+
+.header-section__h1-2{
+    top: 270px;
+    left: 260px;
+    color: var(--color-secundario);
+}
+
+.header-nav__a:hover{
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-secundario);
+}
+
+.header-section__div{
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
+/*-----------------------------MAIN------------------------------------*/
+main{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    top: -30px;
+    width: 90%;
+    margin: auto;
+}
+/*-----------------------------CONOCENOS------------------------------------*/
+.main__conocenos, .main__adoptar{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /*centrar eje Y*/
+    justify-content: center; /*centrar eje x*/
+}
+.main__conocenos-c, .main__adoptar-c{
+    min-width: 400px;
+    padding: 10px 20px;
+    flex: 1;
+}
+.main__conocenos-h2, .main__adoptar-h2{
+    font-family:'Rubik Moonrocks', cursive;
+    color: var(--color-secundario);
+    text-align: center;
+    max-width: 500px;
+    font-size: 35px;
+}
+.main__conocenos-p, .main__adoptar-p{
+    text-align: justify;
+    color: var(--color-blanco);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+}
+.separador1, .separador2{
+    width: 100%;
+}
+/*-----------------------------ADOPTAR------------------------------------*/
+#adoptar, #conocenos, #mascotas{
+    height: 25px;
+}
+
+
+.main__adoptar-img{
+    border-radius: 50% ;
+    padding: 10px;  
+    background-color: var(--color-primario);
+}
+
+/*-----------------------------MASCOTAS------------------------------------*/
+.main__mascotas-prev{
+    color: var(--color-blanco);
+    margin-top: 40px;
+}
+.main__mascotas-prev h2{
+    font-family: 'Rubik Moonrocks', cursive;;
+    color: var(--color-secundario);
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-primario);
+    width: 340px;
+    margin: auto;
+}
+.main__mascotas-prev p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.main__mascotas{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(auto-fiT,minmax(350px,400px));
+    justify-content: center;
+}
+.main__mascotas-contenedor{
+    display: flex;
+    text-decoration: none;
+    border:4px solid var(--color-primario);
+    padding: 20px;
+    align-items: center;
+    height: 200px;
+    margin: 20px;
+    background-color: var(--color-terceario);
+    border-radius: 30px;
+}
+
+.mascotas-contenedor__img{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--color-primario);
+    margin-left: 40px;
+}
+.img-mascotas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__mascotas-contenedor:hover{
+    background-color: #0003;
+    box-shadow: 0 0 2px var(--color-primario);
+    transition: 0.3s;
+    border: 4px solid var(--color-secundario);
+}
+
+.main__mascotas-contenedor:hover > .mascotas-contenedor__img{
+    border-radius: 20%;
+    width: 170px;
+    height: 170px;
+    margin-left: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 2px var(--color-primario);
+    border: 4px solid var(--color-secundario);
+}
+
+/*-------------------CONTACTANOS----------------------------*/
+.pre-proceso{
+    text-align: center;
+    color: var(--color-blanco);
+    font-size: 20px;
+}
+.pre-proceso h2{
+    font-family: var(--texto-primario);
+    color: var(--color-primario);
+}
+.main__contactanos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contactanos__items{
+    flex: 1;
+    
+}
+.contactanos__img-container{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+}
+.contactanos__img-transition{
+    width: 400px;
+    height: 400px;
+    animation-name: perros;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    border: 2px solid var(--color-primario);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-texto{
+    color: transparent;
+    position: relative;
+    margin: 30px auto;
+    width: 340px;
+    height: 340px;
+    align-self: justify;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #00000099;
+    color: var(--color-secundario);
+    font-size: 18px;
+    padding-top: 100px;
+    text-shadow: 0 0 5px #000;
+}
+.contenedor-texto h2{
+    font-family: var(--texto-primario);
+    position: relative;
+    top: -30px;
+    font-size: 30px;
+    
+}
+ @keyframes perros {
+    0%{
+        background-image: url(imagenes/oli.jpg);   
+    }
+    28%{
+        background-image: url(imagenes/oli.jpg);   
+    }
+    35%{
+        background-image: url(imagenes/roma1.jpg); 
+    }
+    57%{
+        background-image: url(imagenes/roma1.jpg); 
+    }
+    65%{
+        background-image: url(imagenes/chora.jpg);  
+    }
+    90%{
+        background-image: url(imagenes/chora.jpg);  
+    }
+    100%{
+        background-image: url(imagenes/oli.jpg);
+    }
+ }
+
+ 
+.contactanos__input{
+    flex: 1;
+    min-width: 400px;
+    
+}
+
+.input{
+    border: none;
+    text-decoration: none;
+    background-color: #111;
+    border-bottom: 2px solid var(--color-primario);
+    width: 90%;
+    padding: 10px;
+    margin:10px 40px;
+    border-radius: 20px;
+    color: var(--color-secundario);
+}
+
+textarea{
+    height: 100px;
+    resize: none; /*text area no se puede modificar el tamaño*/
+}
+
+.input:nth-child(2){
+    width: 30%;
+}
+
+.input:hover{
+    background: linear-gradient(to bottom,transparent 0%,var(--color-primario));
+}
+
+.input:focus{
+    outline:none;
+    background: linear-gradient(to bottom,transparent 0%,var(--color-primario));
+}
+
+input[type="submit"]{
+    background: linear-gradient(to bottom,transparent 0%,var(--color-primario));
+    color:#fff;
+}
+
+input[type="submit"]:active{
+    color: var(--color-secundario);
+}
+
+/*---------------------------------FOOTER----------------------------------*/
+.footer{
+    
+    height: 100px;
+    position: relative;
+    margin: auto;
+    width: 90%;
+}
+.footer__container-logo{
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    top: -20px;
+
+}
+.div-footer{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+.footer__container-contactos{
+    width: 50px;
+    display: inline-block;
+    margin:0px 10px;
+}
+.marca{
+    font-family: var(--texto-primario);
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+}
